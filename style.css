@@ -1,0 +1,271 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #FFE5B4; /* Light orange */
+  color: #222;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+header img {
+  display: block;
+  margin: 10px auto;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-in left */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Logo animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Add to sections */
+.hero {
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Logo style */
+header img {
+  display: block;
+  margin: 10px auto;
+  animation: pulse 3s infinite;
+}
+
+/* Navigation hover */
+nav ul li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Button or image hover zoom */
+button, .hero img {
+  transition: transform 0.3s ease;
+}
+
+button:hover, .hero img:hover {
+  transform: scale(1.05);
+}
+
+
+body {
+  background: linear-gradient(-45deg, #00416A, #E4E5E6, #00c6ff, #0072ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Slide-in animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to About section */
+.about-animated {
+  animation: slideInUp 1.2s ease-out;
+}
+
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.services-animated {
+  animation: slideInRight 1.2s ease-out forwards;
+}
+
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.hero {
+  padding: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base animation class */
+.animated {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Delays for staggered effect */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+
+/* Services list style */
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.services-list li {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding: 60px 20px;
+  background-color: #ffe5b4; /* Light orange */
+  text-align: center;
+}
+
+
